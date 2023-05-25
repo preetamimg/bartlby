@@ -21,8 +21,52 @@ body {
             & .checkoutCol {
                 width: 33.33%;
                 text-align: center;
-                & img {
-                    height: 511px;
+                .checkoutColInner {
+                    margin-top: 67px;
+                    & img {
+                        height: 511px;
+                        width: 294px;
+                    }
+                }
+            }
+            & .checkoutSecitonHeading {
+                font-family: 'Source Sans Pro';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 48px;
+                text-align: center;
+                color: #101269;
+                width: 336px;
+                margin-inline: auto;
+            }
+            & .checkoutBtnCol {
+                width: 100%;
+                margin-top: 69px;
+                & .applyBtn {
+                    border: none;
+                    background-color: #0FC89D;
+                    border-radius: 4px;
+                    width: 280px;
+                    height: 49px;
+                    font-family: 'Source Sans Pro';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    letter-spacing: 1.5px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: #101269;
+                    cursor: pointer;
+                    margin-inline: auto;
+                    transition: 0.3s ease-in-out;
+                    &:hover {
+                        background-color: lighten(#0FC89D, 5);
+                    }
                 }
             }
         }
