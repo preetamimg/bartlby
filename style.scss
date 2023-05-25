@@ -6,3 +6,26 @@ body {
     padding: 0;
 }
 @import "sushil";
+// font-family: 'Source Sans Pro', sans-serif;
+.checkoutSection {
+    background-image: url(./../images/checkoutBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 210px;
+    padding-bottom: 65px;
+    & .checkOutInner {
+        width: 1178px;
+        margin-inline: auto;
+        & .checkoutRow {
+            display: flex;
+            flex-wrap: wrap;
+            & .checkoutCol {
+                width: 33.33%;
+                text-align: center;
+                & img {
+                    height: 511px;
+                }
+            }
+        }
+    }
+}
