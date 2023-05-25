@@ -1,13 +1,10 @@
-body {
-    // display: flex;
-    // align-items: center;
-    // height: 100vh;
-}
-
 .moreSection {
+    margin-bottom: -183px;
     width: 100%;
     overflow: hidden;
     padding: 37px 40px;
+    position: relative;
+    z-index: 1;
     & .moreSectionInner {
         max-width: 1178px;
         margin: auto;
@@ -93,7 +90,7 @@ body {
         }
     }
 }
-@media  only screen and (max-width: 1399.99px) {
+@media (max-width: 1399.98px) {
     .moreSection {
         & .moreSectionInner {
             & .streetLogoImg {
@@ -119,7 +116,7 @@ body {
         }
     }
 }
-@media  only screen and (max-width: 1199.99px) {
+@media (max-width: 1199.98px) {
     .moreSection {
         & .moreSectionInner {
             padding: 35px 15px;
@@ -158,10 +155,13 @@ body {
         }
     }
 }
-@media  only screen and (max-width: 991.99px) {
+@media (max-width: 991.98px) {
     .moreSection {
+        padding: 37px 0;
         & .moreSectionInner {
+            width: 720px;
             & .streetLogoImg {
+                display: none;
                 & img {
                 }
             }
@@ -186,10 +186,11 @@ body {
         }
     }
 }
-@media  only screen and (max-width: 767.99px) {
+@media (max-width: 767.98px) {
     .moreSection {
-        padding: 0px 12px;    
+        padding: 35px 12px;    
         & .moreSectionInner {
+            width: 540px;
             padding: 25px 15px;
             & .streetLogoImg {
                 display: none;
@@ -217,10 +218,11 @@ body {
         }
     }
 }
-@media  only screen and (max-width: 575.99px) {
+@media (max-width: 575.98px) {
     .moreSection {
-        padding: 0px 12px;    
+        padding: 35px 12px;    
         & .moreSectionInner {
+            width: 100%;
             padding: 38px 19px 30px 25px;
             & .streetLogoImg {
                 display: none;
