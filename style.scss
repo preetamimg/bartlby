@@ -23,6 +23,7 @@ body {
                 text-align: center;
                 .checkoutColInner {
                     margin-top: 67px;
+                    height: 511px;
                     & img {
                         height: 511px;
                         width: 294px;
@@ -80,6 +81,7 @@ body {
             & .checkoutRow {
                 & .checkoutCol {
                     .checkoutColInner {
+                        height: auto;
                         & img {
                             height: auto;
                             width: 80%;
