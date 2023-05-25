@@ -6,7 +6,6 @@ body {
     padding: 0;
 }
 @import "sushil";
-// font-family: 'Source Sans Pro', sans-serif;
 .checkoutSection {
     background-image: url(./../images/checkoutBg.png);
     background-repeat: no-repeat;
@@ -31,7 +30,7 @@ body {
                 }
             }
             & .checkoutSecitonHeading {
-                font-family: 'Source Sans Pro';
+                font-family: 'Source Sans Pro', sans-serif;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 48px;
@@ -50,7 +49,7 @@ body {
                     border-radius: 4px;
                     width: 280px;
                     height: 49px;
-                    font-family: 'Source Sans Pro';
+                    font-family: 'Source Sans Pro', sans-serif;
                     font-style: normal;
                     font-weight: 600;
                     font-size: 16px;
@@ -67,6 +66,134 @@ body {
                     transition: 0.3s ease-in-out;
                     &:hover {
                         background-color: lighten(#0FC89D, 5);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .checkoutSection {
+        & .checkOutInner {
+            width: 960px;
+            & .checkoutRow {
+                & .checkoutCol {
+                    .checkoutColInner {
+                        & img {
+                            height: auto;
+                            width: 80%;
+                        }
+                    }
+                }
+                & .checkoutSecitonHeading {
+                    width: 319px;
+                    font-size: 42px;
+                }
+                & .checkoutBtnCol {
+                    & .applyBtn {
+                        width: 260px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991.98px) {
+    .checkoutSection {
+        & .checkOutInner {
+            width: 720px;
+            & .checkoutRow {
+                & .checkoutCol {
+                    .checkoutColInner {
+                        & img {
+                        }
+                    }
+                }
+                & .checkoutSecitonHeading {
+                    width: 239px;
+                    font-size: 35px;
+                    line-height: 40px;
+                }
+                & .checkoutBtnCol {
+                    & .applyBtn {
+                        font-size: 15px;
+                        height: 47px;
+                        width: 220px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767.98px) {
+    .checkoutSection {
+        & .checkOutInner {
+            width: 540px;
+            & .checkoutRow {
+                position: relative;
+                & .checkoutCol {
+                    width: 50%;
+                    .checkoutColInner {
+                        margin-top: 105px;
+                        & img {
+                        }
+                    }
+                    &:first-child {
+                        display: none;
+                    }
+                }
+                & .checkoutSecitonHeading {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                & .checkoutBtnCol {
+                    display: none;
+                    & .applyBtn {
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 575.98px) {
+    .checkoutSection {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 45%;
+            background-color: white;
+        }
+        & .checkOutInner {
+            width: 100%;
+            position: relative;
+            z-index: 9;
+            & .checkoutRow {
+                & .checkoutCol {
+                    width: 100%;
+                    .checkoutColInner {
+                        margin-top: 34px;
+                        padding-inline: 19px;
+                        & img {
+                            width: 100%;
+                            max-width: 360px;
+                        }
+                    }
+                }
+                & .checkoutSecitonHeading {
+                    font-size: 24px;
+                    line-height: 32px;
+                    width: 228px;
+                    position: static;
+                    transform: translateX(0);
+                }
+                & .checkoutBtnCol {
+                    & .applyBtn {
                     }
                 }
             }
